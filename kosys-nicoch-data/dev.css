@@ -1,0 +1,18 @@
+
+
+nico_thumb_watch
+{
+	display: block;
+	width: 400px;
+	height: 250px;
+	background-color: black;
+}
+nico_video,
+nico_live_list,
+nico_blog
+{
+	display: block;
+	height: 340px;
+	content: "ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ";
+
+}
