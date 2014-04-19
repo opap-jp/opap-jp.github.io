@@ -1,165 +1,38 @@
 
-/* ニコニコ動画用 */
+@import "kosys-outer.less";
 
 
-.parts * {
-	box-sizing: content-box;
-}
 
-.parts p {
-	margin: 0 0;
-}
-
-section.site_body {
-	background-color: #ffffff;
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	color: #333333;
+html body .kosys {
+    position: relative;
+    font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif !important;
+    font-size: 12px;
+    line-height: normal;
+    width: 960px;
+    margin: 0 auto;
 }
 
 
-div#channel-main {
-	background-color: #ffffff;
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	color: #333333;
-}
-.kosys {
-	position: relative;
-	font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif !important;
-	font-size: 12px;
-	line-height: normal;
-	width: 960px;
-	margin: 0 auto;
-}
-.title {
-	position: relative;
-	height: 46px;
-	margin: 20px -10px 0 -10px;
-	display: block;
-	padding: 5px 15px;
-	font-size: 16px;
-	color: #FFF;
-	background-color: #c0392b;
-}
-.title::after {
-	position: absolute;
-	left: 0px;
-	bottom: -10px; /* border-bottomの高さと一致させる */
-	content: "";
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-right: 10px solid #752926; /* h3が親要素からはみ出した幅を指定 */
-	border-bottom: 10px solid transparent;
-}
-.title::before {
-	position: absolute;
-	right: 0px;
-	bottom: -10px; /* border-bottomの高さと一致させる */
-	content: "";
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-left: 10px solid #752926; /* h3が親要素からはみ出した幅を指定 */
-	border-bottom: 10px solid transparent;
-}
-.title>h1 {
-	position: absolute;
-	margin: 0 0;
-	padding: 0 0;
-	width: 320px;
-	height: 80px;
-	background: url(../img/logo.png) no-repeat left top;
-	
-	margin-top: -24px;
- text-indent:200%;
- white-space:nowrap;
- overflow:hidden;
-}
-.jumbotron {
-	background-image: url(../img/S03_C07.jpg);
-}
-.main {
-	position: relative;
-}
-.kosys-player-main {
-	background: url(../img/departure-info.png) no-repeat left top;
-	-webkit-background-size: 100% auto;
-	-moz-background-size: 100% auto;
-	-o-background-size: 100% auto;
-	background-size: 100% auto;
-	padding-top: 55px;
-	background-color: #666666;
-	height: 330px;
-}
-.kosys-player-main>* {
-	display: block;
-	margin: 0px auto;
-}
-.kosys-row-keywords {
-}
-.kosys-row-keywords>div {
-	font-size: 2em;
-	text-align: center;
-}
-.kosys-section {
-	min-height: 170px;
-	padding-bottom: 20px;
- >h2 {
- color: #FFF;
- background-color: #333434;
- font-size: 1.0em;
- height: 41.25px;
- text-indent:200%;
- white-space:nowrap;
- overflow:hidden;
-}
->.kosys-readmore{
-	position: absolute;
-	right: 15px;
-	bottom: 0;
-}
-}
-.kosys-section-movie {
- .kosys-section;
- >h2 {
- background: url(../img/houmen-movie.png) no-repeat left top;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-}
-}
-.kosys-section-live {
- .kosys-section;
- >h2 {
- background: url(../img/houmen-live.png) no-repeat left top;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-}
-}
-.kosys-section-info {
- .kosys-section;
- >h2 {
- background: url(../img/heading-info.png) no-repeat left top;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-}
-}
-.kosys-section-blog {
- .kosys-section;
- >h2 {
- background: url(../img/houmen-blog.png) no-repeat left top;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-}
+
+html body .kosys {
+
+
+    // Core variables and mixins
+    @import "variables.less";
+    @import "mixins.less";
+    // Reset
+    @import "normalize.less";
+    @import "print.less";
+    // Core CSS
+    @import "scaffolding.less";
+    @import "type.less";
+    @import "code.less";
+    @import "grid.less";
+    @import "tables.less";
+    //@import "forms.less";
+    @import "buttons.less";
+    // Components
+    @import "jumbotron.less";
+    // Kosys Styles
+    @import "kosys-styles.less";
 }

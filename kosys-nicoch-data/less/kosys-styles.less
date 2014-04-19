@@ -1,0 +1,162 @@
+
+
+
+.title {
+    position: relative;
+    height: 46px;
+    margin: 20px -10px 0 -10px;
+    display: block;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #c0392b;
+}
+
+    .title::after {
+        position: absolute;
+        left: 0px;
+        bottom: -10px; /* border-bottomの高さと一致させる */
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-right: 10px solid #752926; /* h3が親要素からはみ出した幅を指定 */
+        border-bottom: 10px solid transparent;
+    }
+
+    .title::before {
+        position: absolute;
+        right: 0px;
+        bottom: -10px; /* border-bottomの高さと一致させる */
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-left: 10px solid #752926; /* h3が親要素からはみ出した幅を指定 */
+        border-bottom: 10px solid transparent;
+    }
+
+    .title > h1 {
+        position: absolute;
+        margin: 0 0;
+        padding: 0 0;
+        width: 320px;
+        height: 80px;
+        background: url(../img/logo.png) no-repeat left top;
+        margin-top: -24px;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+.jumbotron {
+    background-image: url(../img/S03_C07.jpg);
+    height: 350px;
+}
+
+.main {
+    position: relative;
+}
+
+.kosys-player-main {
+    background: url(../img/departure-info.png) no-repeat left top;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    padding-top: 55px;
+    background-color: #666666;
+    height: 330px;
+    width: 430px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+    .kosys-player-main > * {
+        display: block;
+        margin: 0px auto;
+        width: 400px;
+    }
+
+.kosys-row-keywords {
+}
+
+    .kosys-row-keywords > div {
+        font-size: 2em;
+        text-align: center;
+    }
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.kosys-section {
+    min-height: 170px;
+    padding-bottom: 20px;
+    display: table-cell;
+
+    >h2 {
+        color: #FFF;
+        background-color: #333434;
+        font-size: 1.0em;
+        height: 41.25px;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    >.kosys-readmore {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+    }
+}
+
+.kosys-section-movie {
+    .kosys-section;
+
+    >h2 {
+        background: url(../img/houmen-movie.png) no-repeat left top;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+}
+
+.kosys-section-live {
+    .kosys-section;
+
+    >h2 {
+        background: url(../img/houmen-live.png) no-repeat left top;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+}
+
+.kosys-section-info {
+    .kosys-section;
+
+    >h2 {
+        background: url(../img/heading-info.png) no-repeat left top;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+}
+
+.kosys-section-blog {
+    .kosys-section;
+
+    >h2 {
+        background: url(../img/houmen-blog.png) no-repeat left top;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+}
