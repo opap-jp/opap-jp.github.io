@@ -1,5 +1,7 @@
 
-
+ul{
+    margin-left: 20px;
+}
 
 .title {
     position: relative;
@@ -50,7 +52,7 @@
     }
 
 .jumbotron {
-    background-image: url(../img/S03_C07.jpg);
+    background-image: url(../img/topimage-zansho.jpg);
     height: 350px;
 }
 
@@ -91,72 +93,120 @@
     margin-left: 0;
 }
 
+/*************************************
+ * セクションスタイル 
+ *************************************/
+
+/* 共通
+------------------------------------*/
+
+
 .kosys-section {
     min-height: 170px;
     padding-bottom: 20px;
     display: table-cell;
-
-    >h2 {
-        color: #FFF;
-        background-color: #333434;
-        font-size: 1.0em;
-        height: 41.25px;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
-    >.kosys-readmore {
-        position: absolute;
-        right: 15px;
-        bottom: 0;
-    }
 }
+
+.kosys-section-readmore {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.kosys-h-section {
+    color: #FFF;
+    background-color: #333434;
+    font-size: 1.0em;
+    height: 45px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* 動画
+------------------------------------*/
 
 .kosys-section-movie {
     .kosys-section;
-
-    >h2 {
-        background: url(../img/houmen-movie.png) no-repeat left top;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-    }
 }
+
+.kosys-h-movie {
+    .kosys-h-section;
+
+    background: url(../img/houmen-movie.png) no-repeat left top;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+/* 生放送
+------------------------------------*/
 
 .kosys-section-live {
     .kosys-section;
-
-    >h2 {
-        background: url(../img/houmen-live.png) no-repeat left top;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-    }
 }
+
+.kosys-h-live {
+    .kosys-h-section;
+
+    background: url(../img/houmen-live.png) no-repeat left top;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+
+/* お知らせ欄
+------------------------------------*/
 
 .kosys-section-info {
     .kosys-section;
-
-    >h2 {
-        background: url(../img/heading-info.png) no-repeat left top;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-    }
+    padding-left: 0;
+    padding-right: 0;
 }
+
+.kosys-section-info-sub {
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.kosys-h-info {
+    .kosys-h-section;
+
+    background: url(../img/heading-info.png) no-repeat left top;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.kosys-h-info-sub {
+    font-size: 18px;
+    color: white;
+    background-color: #9db9c1;
+    margin: 15px 0;
+    padding: 3px 6px;
+}
+
+
+
+/* ブログ
+------------------------------------*/
 
 .kosys-section-blog {
     .kosys-section;
+}
 
-    >h2 {
-        background: url(../img/houmen-blog.png) no-repeat left top;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-    }
+
+.kosys-h-blog {
+    .kosys-h-section;
+
+    background: url(../img/houmen-blog.png) no-repeat left top;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }

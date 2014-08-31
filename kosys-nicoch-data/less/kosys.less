@@ -12,17 +12,18 @@ html body .kosys {
     margin: 0 auto;
 }
 
-
-
 html body .kosys {
 
 
     // Core variables and mixins
     @import "variables.less";
     @import "mixins.less";
-    // Reset
+
+    // Reset and dependencies
     @import "normalize.less";
     @import "print.less";
+    @import "glyphicons.less";
+
     // Core CSS
     @import "scaffolding.less";
     @import "type.less";
@@ -33,6 +34,8 @@ html body .kosys {
     @import "buttons.less";
     // Components
     @import "jumbotron.less";
+    // Utility classes
+    @import "utilities.less";
     // Kosys Styles
     @import "kosys-styles.less";
 }

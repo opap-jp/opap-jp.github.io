@@ -11,7 +11,7 @@ Licensed under http://www.apache.org/licenses/LICENSE-2.0
 img/*
 
 Copyright (C) 2013 OPAP-JP.
-Materials By: すら, 夏野未来, Butameron 
+Materials By: なめたけ, すら, 夏野未来, Butameron 
 Licensed under http://creativecommons.org/licenses/by/2.1/jp/
 
 

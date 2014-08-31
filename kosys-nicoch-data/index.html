@@ -2,6 +2,7 @@
 <html class="webkit">
 <head>
     <meta charset="utf-8" />
+    <title></title>
     <link href="http://ch.res.nimg.jp/css/base.css?2013-12-11" rel="stylesheet" type="text/css" /><!-- link for test purpose -->
     <link href="css/kosys.css" rel="stylesheet" type="text/css" />
     <link href="dev.css" rel="stylesheet" type="text/css" />
@@ -19,7 +20,9 @@
                 <!--◆◆◆◆◆◆◆◆◆ここから◆◆◆◆◆◆◆◆◆-->
 
                 <div class="kosys">
-                    <div class="title">  <h1>こうしす！</h1> </div>
+                    <div class="title">
+                        <h1>こうしす！</h1>
+                    </div>
                     <div class="jumbotron">
                         <div class="container">
                             <div class="row">
@@ -36,45 +39,80 @@
                         <div class="row">
                             <div class="col-md-8">
 
-                                <div class="kosys-section-movie col-md-6">
-                                    <h2>動画本線 アニメ・こうしす！方面</h2>
-                                    <nico_video design="1" count="3" sort="r" order="a" filter="none"></nico_video>
-                                    <a href="http://ch.nicovideo.jp/kosys/video" class="kosys-readmore pull-right btn btn-primary btn-sm">さらに見る</a>
-                                </div>
-                                <div class="kosys-section-live col-md-6">
-                                    <h2>生放送支線 こうしす！通信 方面</h2>
-                                    <nico_live_list status="all" count="3" design="1"></nico_live_list>
-                                    <a href="http://ch.nicovideo.jp/kosys/live" class="kosys-readmore pull-right btn btn-primary btn-sm">さらに見る</a>
+                                <div class="row">
+                                    <div class="kosys-section-movie col-md-6">
+                                        <h2 class="kosys-h-movie">動画本線 アニメ・こうしす！方面</h2>
+                                        <nico_video design="1" count="3" sort="f" order="d" filter="none"></nico_video>
+                                    </div>
+                                    <div class="kosys-section-live col-md-6">
+                                        <h2 class="kosys-h-live">生放送支線 こうしす！通信 方面</h2>
+                                        <nico_live_list status="all" count="3" design="1"></nico_live_list>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="kosys-section-blog col-md-12">
+                                            <h2 class="kosys-h-blog">ブロマガ支線 こうしす！通信 方面</h2>
+                                            <nico_blog article_description_rows="4" count="10" show_article_list="1" show_blog_info="0"></nico_blog>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="col-md-12 kosys-section-info">
-                                    <h2>お知らせ</h2>
-                                    <nico_news count="3" update_time_display="1"></nico_news>
+                                    <h2 class="kosys-h-info">お知らせ</h2>
+
+                                    <div class="row kosys-section-info-sub" >
+                                        <h3 class="kosys-h-info-sub"><i class="glyphicon glyphicon-pushpin"></i> 最新情報</h3>
+
+                                        <nico_news count="3" update_time_display="1"></nico_news>
+
+                                    </div>
+
+                                    <div class="row kosys-section-info-sub">
+                                        <h3 class="kosys-h-info-sub"><i class="glyphicon glyphicon-pushpin"></i> こうしす！とは</h3>
+                                        <p class="lead">――長く使われた物には魂が宿ると言いますが、このシステムに宿っていたのはゴミでした。</p>
+                                        <p>ここは姫路と京都を結ぶ中堅私鉄、京姫鉄道株式会社。 その広報部システム課に配属された新入社員、祝園アカネ（ほうその　あかね）は、オフィスワークに喜んだのもつかの間……。今日も今日とてトラブル対応にてんてこ舞い。社内SEの悲哀を描く技術系コメディ！</p>
+                                        <p>これは、情報セキュリティの啓蒙を目指した、ただひとつの（※）自主制作アニメであるッ！ ※当サークル調べ（笑）</p>
+
+                                    </div>
+
+
+                                    <div class="row kosys-section-info-sub">
+                                        <h3 class="kosys-h-info-sub"><i class="glyphicon glyphicon-pushpin"></i> チャンネル入会のご案内</h3>
+                                        <p class="lead">チャンネル月額料金: 500円+税</p>
+                                        <p>
+                                            チャンネルにご入会いただきますと、当サークルの『賛助メンバー』となります。お支払い頂いた料金は全額、当サークルの『活動全般へのご寄付』（賛助会費）として取り扱います。活動内容及び方針にご賛同頂き、ご支援いただける場合のみご入会下さい。
+
+                                            ご入会前には、必ず以下の「チャンネル入会のご案内」をご覧下さい。
+
+                                        </p>
+                                        <a href="http://ch.nicovideo.jp/kosys/blomaga/ar394012" class="btn btn-primary btn-sm pull-right"><i class="glyphicon glyphicon-arrow-right"></i> チャンネル入会のご案内</a>
+                                        <br class="clearfix" />
+                                    </div>
+
+
+                                    <div class="row kosys-section-info-sub">
+                                        <h3 class="kosys-h-info-sub"><i class="glyphicon glyphicon-pushpin"></i> 作品のご利用について</h3>
+                                        <p>このチャンネルに掲載されている作品は、断りがない限りすべてで利用が許諾されているフリー素材です。原著作者のクレジットを表示していただくことで、商用を含め自由にご利用いただけます。</p>
+                                        <a href="http://opap.jp/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" class="btn btn-sm btn-primary pull-right"><i class="glyphicon glyphicon-arrow-right"></i> 詳細はこちら</a>
+                                        <br class="clearfix" />
+                                    </div>
+
+
+                                    <div class="row kosys-section-info-sub">
+                                        <h3 class="kosys-h-info-sub"><i class="glyphicon glyphicon-pushpin"></i> 著作権表示</h3>
+                                        <ul>
+                                            <li> Top image: Created by なめたけ. Licensed under <a href="http://creativecommons.org/licenses/by/4.0/deed.ja">Creative Commons Attribution 4.0 International</a>.</li>
+                                            <li> Image assets:  Created by Butameron. Licensed under <a href="http://creativecommons.org/licenses/by/4.0/deed.ja">Creative Commons Attribution 4.0 International</a>.</li>
+
+                                        </ul>
+                                        <p></p>
+                                    </div>
+
+
+
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="kosys-section-blog col-md-8">
-                                <h2>ブロマガ支線 こうしす！通信 方面</h2>
-                                <nico_blog article_description_rows="4" count="10" show_article_list="1" show_blog_info="0"></nico_blog>
-                            </div>
-                            <div class="kosys-section-pay col-md-4">
-                                <h2>自由席定期券のご案内</h2>
-                            </div>
-                        </div>
-                        <div class="row kosys-row-keywords">
-                            <div class="kosys-cell-keyword col-md-4">
-                                <img src="http://opap-jp.github.io/kosys-nicoch-data/img/Locked.png" class="img-circle" /><br />
-                                セキュリティ
-                            </div>
-                            <div class="kosys-cell-keyword col-md-4">
-                                <img src="http://opap-jp.github.io/kosys-nicoch-data/img/Locked.png" class="img-circle" /><br />
-                                鉄道
-                            </div>
-                            <div class="kosys-cell-keyword col-md-4">
-                                <img src="http://opap-jp.github.io/kosys-nicoch-data/img/Locked.png" class="img-circle" /><br />
-                                姫路
                             </div>
                         </div>
                     </div>
