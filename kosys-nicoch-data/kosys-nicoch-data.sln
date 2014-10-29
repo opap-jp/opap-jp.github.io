@@ -8,20 +8,20 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "kosys-nicoch-data", "http:/
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_62436"
-		Debug.AspNetCompiler.PhysicalPath = "E:\OPAP-JP\repo\opap-jp.github.io\kosys-nicoch-data\"
+		Debug.AspNetCompiler.PhysicalPath = "..\kosys-nicoch-data\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62436\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_62436"
-		Release.AspNetCompiler.PhysicalPath = "E:\OPAP-JP\repo\opap-jp.github.io\kosys-nicoch-data\"
+		Release.AspNetCompiler.PhysicalPath = "..\kosys-nicoch-data\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62436\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "E:\OPAP-JP\repo\opap-jp.github.io\kosys-nicoch-data\"
+		SlnRelativePath = "..\kosys-nicoch-data\"
 	EndProjectSection
 EndProject
 Global
