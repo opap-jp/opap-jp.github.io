@@ -2,6 +2,22 @@
 ul{
     margin-left: 20px;
 }
+dl.kosys-dl {
+    margin: 0 0 5px 0;
+}
+dl.kosys-dl dt:before {
+    content:"■";
+}
+dl.kosys-dl dt {
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+dl.kosys-dl dd {
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
 
 .title {
     position: relative;
@@ -123,6 +139,9 @@ ul{
     overflow: hidden;
 }
 
+.kosys-pickupTitle {
+    color: red;
+}
 
 /* 動画
 ------------------------------------*/
@@ -139,6 +158,12 @@ ul{
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+}
+
+.kosys-pickup-movie{
+    background-color: #fff0a7;
+    min-height: 20px;
+    padding: 5px;
 }
 
 /* 生放送
